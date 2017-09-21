@@ -1,0 +1,18 @@
+{
+  "name": "employed",
+  "version": "1.0.0",
+  "description": "Learn who is still employed or new first",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Adam Sutch",
+  "license": "GPLv3",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bluebird": "^3.5.0",
+    "nedb": "^1.8.0",
+    "node-cron": "^1.2.1",
+    "ramda": "^0.24.1"
+  }
+}

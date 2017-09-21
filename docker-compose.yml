@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  employed:
+    container_name: employed
+    build:
+      context: .
+    environment:
+      # NOTE this personal access token only needs 'read:org'
+    - GITHUB_TOKEN=${GITHUB_TOKEN:-myAccessToken}
+      # The company to check on
+    - GITHUB_ORG=${GITHUB_ORG:-myCompany}
+      # Pushbullet access token
+    - PUSHBULLET_TOKEN=${PUSHBULLET_TOKEN:-myPushbulletToken}
